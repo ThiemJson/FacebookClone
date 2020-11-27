@@ -46,7 +46,10 @@ struct ContentView: View {
                         .padding(.bottom,10)
                     
                     Group {
-                        Button(action: { }) {
+                        Button(action: {
+                            print("NguyenCaoThiem")
+                            ListView(listItems: listItems, textInput: "")
+                        }) {
                             Text("LOGIN")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(UIColorPalettes.textColor))

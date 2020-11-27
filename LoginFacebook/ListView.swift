@@ -46,15 +46,34 @@ struct ListItem: View {
 }
 
 struct ListView: View {
-    var listItems = [ListItemDTO]()
-    
+    @State var listItems = [ListItemDTO]()
+    @State var textInput : String
     var body: some View {
         VStack()
             {
                 Group {
-                    Text("TOP Header")
-                        .foregroundColor(.white)
-                        .font(.system(size: 25))
+                    
+                    HStack {
+                        Spacer()
+                        Text("TOP Header")
+                            .foregroundColor(.white)
+                            .font(.system(size: 25))
+                        Spacer()
+                        VStack{
+                            Spacer()
+                            TextField("Phone number or email", text: $textInput)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .frame( width: UIScreen.screenWidth * 0.3 ,height:UIScreen.screenHeight * (59 / 957) )
+                                .textFieldStyle(PlainTextFieldStyle())
+                                .padding([.leading, .trailing], 20)
+                                .overlay(RoundedRectangle(cornerRadius: 0).stroke(Color(UIColorPalettes.textColor), lineWidth: 2))
+                            Spacer()
+                        }
+                        Spacer()
+                        
+                    }
+                    
                 }.frame(width: UIScreen.screenWidth * 0.99,height: UIScreen.screenHeight * 0.1)
                     .background(Color(UIColorPalettes.primaryColor))
                 ScrollView(.vertical, showsIndicators: true)
@@ -88,6 +107,6 @@ let listItems : [ListItemDTO] = [
 ]
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(listItems: listItems)
+        ListView(listItems: listItems, textInput: "")
     }
 }
