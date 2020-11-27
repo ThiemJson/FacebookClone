@@ -115,7 +115,7 @@ struct ContentView: View {
             
             
             
-        }.edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
@@ -132,7 +132,7 @@ extension UIScreen{
     static let heightMainHeader = UIScreen.main.bounds.size.height * (327 / 957)
 }
 
-struct UIColorPalettes{
+public struct UIColorPalettes{
     static let primaryColor = UIColor(rgb: 0x013679)
     static let primaryColorTint = UIColor(rgb: 0xe2f1fe)
     static let secondaryColor = UIColor(rgb: 0x026deb)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6340B28C25709ED8003B3958 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340B28B25709ED8003B3958 /* ListView.swift */; };
 		63BC1B28256F329B00118DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B27256F329B00118DA4 /* AppDelegate.swift */; };
 		63BC1B2A256F329B00118DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B29256F329B00118DA4 /* SceneDelegate.swift */; };
 		63BC1B2C256F329B00118DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B2B256F329B00118DA4 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6340B28B25709ED8003B3958 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		63BC1B24256F329B00118DA4 /* LoginFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC1B27256F329B00118DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BC1B29256F329B00118DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				63BC1B32256F329F00118DA4 /* LaunchScreen.storyboard */,
 				63BC1B35256F329F00118DA4 /* Info.plist */,
 				63BC1B2F256F329F00118DA4 /* Preview Content */,
+				6340B28B25709ED8003B3958 /* ListView.swift */,
 			);
 			path = LoginFacebook;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6340B28C25709ED8003B3958 /* ListView.swift in Sources */,
 				63BC1B28256F329B00118DA4 /* AppDelegate.swift in Sources */,
 				63BC1B2A256F329B00118DA4 /* SceneDelegate.swift in Sources */,
 				63BC1B2C256F329B00118DA4 /* ContentView.swift in Sources */,
