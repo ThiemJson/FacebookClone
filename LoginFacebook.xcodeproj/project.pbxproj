@@ -11,6 +11,8 @@
 		632D04E9257494D30018C94B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04E8257494D20018C94B /* Config.swift */; };
 		632D04EB257494EC0018C94B /* ColorPalatte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04EA257494EC0018C94B /* ColorPalatte.swift */; };
 		632D04F6257496380018C94B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04F5257496380018C94B /* Login.swift */; };
+		632D04FD257498BD0018C94B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04FC257498BD0018C94B /* CircleImage.swift */; };
+		632D050025749A5C0018C94B /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04FF25749A5C0018C94B /* MessageDetail.swift */; };
 		6340B28C25709ED8003B3958 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340B28B25709ED8003B3958 /* ListView.swift */; };
 		63BC1B28256F329B00118DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B27256F329B00118DA4 /* AppDelegate.swift */; };
 		63BC1B2A256F329B00118DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B29256F329B00118DA4 /* SceneDelegate.swift */; };
@@ -25,6 +27,8 @@
 		632D04E8257494D20018C94B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		632D04EA257494EC0018C94B /* ColorPalatte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalatte.swift; sourceTree = "<group>"; };
 		632D04F5257496380018C94B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		632D04FC257498BD0018C94B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		632D04FF25749A5C0018C94B /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
 		6340B28B25709ED8003B3958 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		63BC1B24256F329B00118DA4 /* LoginFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC1B27256F329B00118DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,22 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		632D04FB257498770018C94B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				632D04FC257498BD0018C94B /* CircleImage.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		632D04FE25749A3E0018C94B /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				632D04FF25749A5C0018C94B /* MessageDetail.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		63BC1B1B256F329B00118DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +112,8 @@
 		63BC1B26256F329B00118DA4 /* LoginFacebook */ = {
 			isa = PBXGroup;
 			children = (
+				632D04FE25749A3E0018C94B /* DataModel */,
+				632D04FB257498770018C94B /* Common */,
 				632D04F42574961A0018C94B /* Login */,
 				632D04E7257494BB0018C94B /* Config */,
 				632D04E4257493490018C94B /* Chat */,
@@ -185,11 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632D050025749A5C0018C94B /* MessageDetail.swift in Sources */,
 				632D04EB257494EC0018C94B /* ColorPalatte.swift in Sources */,
 				6340B28C25709ED8003B3958 /* ListView.swift in Sources */,
 				63BC1B28256F329B00118DA4 /* AppDelegate.swift in Sources */,
 				63BC1B2A256F329B00118DA4 /* SceneDelegate.swift in Sources */,
 				632D04E6257493710018C94B /* ChatRow.swift in Sources */,
+				632D04FD257498BD0018C94B /* CircleImage.swift in Sources */,
 				63BC1B2C256F329B00118DA4 /* ContentView.swift in Sources */,
 				632D04E9257494D30018C94B /* Config.swift in Sources */,
 				632D04F6257496380018C94B /* Login.swift in Sources */,

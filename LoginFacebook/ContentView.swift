@@ -10,6 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View{
-        ChatRow()
+        ChatRow(messageDetail: MessageDetail(user: "NguyenCaoThiem", message: "Hom nay em da an com chua"))
     }
 }

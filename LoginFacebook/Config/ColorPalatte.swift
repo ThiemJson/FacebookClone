@@ -6,6 +6,7 @@ public struct UIColorPalettes{
     static let primaryColorTint = UIColor(rgb: 0xe2f1fe)
     static let secondaryColor = UIColor(rgb: 0x026deb)
     static let textColor = UIColor(rgb: 0xcecece)
+    static let text = UIColor(rgb: 0x393e46)
     
 }
 
