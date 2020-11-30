@@ -20,6 +20,17 @@ struct CircleImage: View {
     }
 }
 
+struct SmallCircleImage: View {
+    var imagePath : String;
+    var body: some View {
+        Image(imagePath)
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .clipShape(Circle())
+        .frame(width: 42, height: 42)
+    }
+}
+
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
         CircleImage(imagePath: "user_logo_1")
