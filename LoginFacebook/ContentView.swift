@@ -8,9 +8,27 @@
 
 import SwiftUI
 
+struct FacebookTabView: View {
+    var body: some View{
+        TabView{
+            ContentView()
+                .tabItem {
+                    Text("Menu")
+                        .foregroundColor(.red)
+                    Image(systemName: "1.circle")
+            }
+            ListView(listItems: listItems, textInput:"")
+                .tabItem{
+                    Text("Message")
+                    Image(systemName: "2.circle")
+            }
+        }
+    }
+}
 struct ContentView: View {
     @State var userName: String = ""
     @State var userPass: String = ""
+    @State var backState: Bool = false;
     
     var body: some View {
         VStack{
@@ -48,7 +66,7 @@ struct ContentView: View {
                     Group {
                         Button(action: {
                             print("NguyenCaoThiem")
-                            ListView(listItems: listItems, textInput: "")
+                            //ListView(listItems: listItems, textInput: "")
                         }) {
                             Text("LOGIN")
                                 .fontWeight(.bold)
@@ -71,13 +89,21 @@ struct ContentView: View {
                                 print("Double tapped!")
                         }
                         
-                        Text("Back")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
-                            .padding(10.0)
-                            .onTapGesture(count: 1) {
-                                print("Double tapped!")
-                        }
+                        //                        Text("Back")
+                        //                            .font(.system(size: 20))
+                        //                            .fontWeight(.bold)
+                        //                            .padding(10.0)
+                        Button(action: {
+                            self.backState.toggle()
+                        }) {
+                            Text("Back")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .padding(10.0)
+                        }.alert(isPresented: $backState, content:{
+                            Alert(title: Text("Are you sure?"), message: Text("Do you want to close Facebook"), primaryButton: .default(Text("Cancel")), secondaryButton: .destructive(Text("OK")))
+                        })
+                        
                         
                     }
                     .foregroundColor(Color(UIColorPalettes.secondaryColor))
@@ -87,19 +113,15 @@ struct ContentView: View {
                         Divider()
                             .frame(width: UIScreen.screenWidth * 0.7 , height: 1.5)
                             .background(Color(UIColorPalettes.textColor))
-                        
                         Group {
                             Text("OR")
                                 .font(.system(size: 18))
                                 .fontWeight(.bold)
                                 .padding(.bottom, 15.0)
                                 .foregroundColor(.black)
-                            .padding()
+                                .padding()
                         }
                         .background(Color(.white))
-                        
-                        
-                        
                     }
                     Group {
                         Button(action: { }) {
@@ -128,35 +150,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-extension UIScreen{
-    static let screenWidth = UIScreen.main.bounds.size.width
-    static let screenHeight = UIScreen.main.bounds.size.height
-    static let screenSize = UIScreen.main.bounds.size
-    static let heightMainHeader = UIScreen.main.bounds.size.height * (327 / 957)
-}
 
-public struct UIColorPalettes{
-    static let primaryColor = UIColor(rgb: 0x013679)
-    static let primaryColorTint = UIColor(rgb: 0xe2f1fe)
-    static let secondaryColor = UIColor(rgb: 0x026deb)
-    static let textColor = UIColor(rgb: 0xcecece)
-    
-}
 
-extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
-        
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-    
-    convenience init(rgb: Int) {
-        self.init(
-            red: (rgb >> 16) & 0xFF,
-            green: (rgb >> 8) & 0xFF,
-            blue: rgb & 0xFF
-        )
-    }
-}
+

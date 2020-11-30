@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632D04E6257493710018C94B /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04E5257493710018C94B /* ChatRow.swift */; };
+		632D04E9257494D30018C94B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04E8257494D20018C94B /* Config.swift */; };
+		632D04EB257494EC0018C94B /* ColorPalatte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04EA257494EC0018C94B /* ColorPalatte.swift */; };
+		632D04EE2574956A0018C94B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D04ED2574956A0018C94B /* CircleImage.swift */; };
 		6340B28C25709ED8003B3958 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340B28B25709ED8003B3958 /* ListView.swift */; };
 		63BC1B28256F329B00118DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B27256F329B00118DA4 /* AppDelegate.swift */; };
 		63BC1B2A256F329B00118DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC1B29256F329B00118DA4 /* SceneDelegate.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632D04E5257493710018C94B /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		632D04E8257494D20018C94B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		632D04EA257494EC0018C94B /* ColorPalatte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalatte.swift; sourceTree = "<group>"; };
+		632D04ED2574956A0018C94B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		6340B28B25709ED8003B3958 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		63BC1B24256F329B00118DA4 /* LoginFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC1B27256F329B00118DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632D04E4257493490018C94B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				632D04E5257493710018C94B /* ChatRow.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		632D04E7257494BB0018C94B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				632D04E8257494D20018C94B /* Config.swift */,
+				632D04EA257494EC0018C94B /* ColorPalatte.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		632D04EC257495520018C94B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				632D04ED2574956A0018C94B /* CircleImage.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		63BC1B1B256F329B00118DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +91,10 @@
 		63BC1B26256F329B00118DA4 /* LoginFacebook */ = {
 			isa = PBXGroup;
 			children = (
+				632D04EC257495520018C94B /* Common */,
+				632D04E7257494BB0018C94B /* Config */,
+				632D04E4257493490018C94B /* Chat */,
+				6340B28B25709ED8003B3958 /* ListView.swift */,
 				63BC1B27256F329B00118DA4 /* AppDelegate.swift */,
 				63BC1B29256F329B00118DA4 /* SceneDelegate.swift */,
 				63BC1B2B256F329B00118DA4 /* ContentView.swift */,
@@ -65,7 +102,6 @@
 				63BC1B32256F329F00118DA4 /* LaunchScreen.storyboard */,
 				63BC1B35256F329F00118DA4 /* Info.plist */,
 				63BC1B2F256F329F00118DA4 /* Preview Content */,
-				6340B28B25709ED8003B3958 /* ListView.swift */,
 			);
 			path = LoginFacebook;
 			sourceTree = "<group>";
@@ -149,10 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632D04EB257494EC0018C94B /* ColorPalatte.swift in Sources */,
+				632D04EE2574956A0018C94B /* CircleImage.swift in Sources */,
 				6340B28C25709ED8003B3958 /* ListView.swift in Sources */,
 				63BC1B28256F329B00118DA4 /* AppDelegate.swift in Sources */,
 				63BC1B2A256F329B00118DA4 /* SceneDelegate.swift in Sources */,
+				632D04E6257493710018C94B /* ChatRow.swift in Sources */,
 				63BC1B2C256F329B00118DA4 /* ContentView.swift in Sources */,
+				632D04E9257494D30018C94B /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
